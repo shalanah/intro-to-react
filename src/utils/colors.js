@@ -25,7 +25,7 @@ const colors = [
 
 const additional = 400;
 for (let i = 0; i < additional; i++) {
-  colors.push(chroma.random());
+  colors.push(chroma.random().css());
 }
 
 export { colors };

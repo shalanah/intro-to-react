@@ -57,3 +57,10 @@ export const colorFilter = (filterBy) => (color) => {
       return true;
   }
 };
+
+export const getTextColor = (color) => {
+  const luminance = chroma(color).luminance();
+  return luminance > 0.1
+    ? chroma(color).luminance(luminance * 0.5)
+    : chroma(color).luminance(luminance + 0.1);
+};

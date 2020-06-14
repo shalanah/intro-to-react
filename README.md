@@ -5,7 +5,13 @@
   - `yarn start`
   - Clearing out not needed boilerplate
   - Adding `yarn add styled-components chroma-js`
+  - Show chroma library
 - Checkout branch-2
   - Show folder struct
   - GlobalStyles
   - Make H1
+  - Show colors and apply text color
+  - Pull swatch into own component
+  - Add selects + basic styling
+  - Add select states
+  - Sort + filter!
