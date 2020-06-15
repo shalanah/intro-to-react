@@ -22,5 +22,6 @@ export const GlobalStyles = createGlobalStyle`
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    padding: .25rem;
   }
 `;
