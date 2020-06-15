@@ -13,7 +13,6 @@
   - `yarn start`
   - Clearing out not needed boilerplate
   - Adding `yarn add styled-components chroma-js`
-  - Show chroma library
 - Checkout branch-2
   - Show folder struct
   - GlobalStyles
