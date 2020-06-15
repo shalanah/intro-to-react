@@ -20,7 +20,7 @@ const getHue = (color) => {
   return isNaN(hue) ? -1 : hue;
 };
 
-export const colorSort = (sortBy) => (a, b) => {
+export const sortColors = (sortBy) => (a, b) => {
   switch (sortBy) {
     case "hue":
       return getHue(b) - getHue(a);
@@ -31,7 +31,7 @@ export const colorSort = (sortBy) => (a, b) => {
   }
 };
 
-export const colorFilter = (filterBy) => (color) => {
+export const filterColors = (filterBy) => (color) => {
   const hue = chroma(color).hcl()[0];
   switch (filterBy) {
     case "reds":
