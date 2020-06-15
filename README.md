@@ -2,6 +2,7 @@
 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
 - [Codesandbox](https://codesandbox.io/)
 - [React Docs](https://reactjs.org/docs/getting-started.html)
+- [React Docs JSX](https://reactjs.org/docs/introducing-jsx.html)
 - [Styled Components](https://styled-components.com/docs)
 - [Chroma.js](https://gka.github.io/chroma.js/)
 
