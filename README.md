@@ -6,7 +6,7 @@
 - [Styled Components](https://styled-components.com/docs)
 - [Chroma.js](https://gka.github.io/chroma.js/)
 
-# Into to react
+# Intro to react
 - Start
   - Checkout branch-1
   - `yarn install`
