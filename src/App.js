@@ -20,10 +20,30 @@ const H1 = styled.h1`
 `;
 
 const App = () => {
+  const [filterBy, setFilter] = useState(filterOpts[0]);
+  const [sortBy, setSort] = useState(sortOpts[0]);
   return (
     <>
       <GlobalStyles />
       <H1>Colors</H1>
+      <div>
+        <span>Filter: </span>
+        <select value={filterBy} onChange={(e) => setFilter(e.target.value)}>
+          {filterOpts.map((opt) => (
+            <option key={opt} value={opt}>
+              {opt}
+            </option>
+          ))}
+        </select>
+        <span>Sort: </span>
+        <select value={sortBy} onChange={(e) => setSort(e.target.value)}>
+          {sortOpts.map((opt) => (
+            <option key={opt} value={opt}>
+              {opt}
+            </option>
+          ))}
+        </select>
+      </div>
       <div
         style={{
           border: "1px solid #000",
@@ -31,9 +51,12 @@ const App = () => {
           overflow: "hidden",
         }}
       >
-        {colors.map((color, i) => {
-          return <Swatch color={color} key={i} />;
-        })}
+        {colors
+          .filter(filterColors(filterBy))
+          .sort(sortColors(sortBy))
+          .map((color, i) => {
+            return <Swatch color={color} key={i} />;
+          })}
       </div>
     </>
   );
