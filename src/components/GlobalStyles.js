@@ -15,13 +15,4 @@ export const GlobalStyles = createGlobalStyle`
   body, select {
     font-family: 'Shrikhand', sans-serif;
   }
-  h1 {
-    display: inline-block;
-    font-size: 8rem;
-    background: linear-gradient(45deg, red, orange, yellow, green, blue, violet);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    padding: .25rem;
-  }
 `;
