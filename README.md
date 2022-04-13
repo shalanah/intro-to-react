@@ -1,3 +1,6 @@
+# Hi!
+This is a code along "Intro to React" repo by Shalanah for a WHCC Lunch n' Learn.
+
 # Links
 - [Create React App](https://reactjs.org/docs/create-a-new-react-app.html)
 - [Codesandbox](https://codesandbox.io/)
